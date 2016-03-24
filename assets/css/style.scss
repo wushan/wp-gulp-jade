@@ -11,27 +11,38 @@ Tags: gulp, boilerpate
 Text Domain: wpgulp-theme
 */
 
-/* ----------------------------------------------------------------------------
- * Mixins & Variables
- * ------------------------------------------------------------------------- */
-@import "partials/mixins";
-@import "partials/variables";
+// Moduels
+  //Susy + BreakPoint
+  @import "../../src/bower_components/susy/sass/susy";
+  @import "../../src/bower_components/breakpoint-sass/stylesheets/breakpoint";
+  @import "../../src/bower_components/bourbon/app/assets/stylesheets/bourbon";
+  // @import 
+  //Normalize
+  @import "vendors/normalize";
 
-/* ----------------------------------------------------------------------------
- * Normalize & Santize
- * ------------------------------------------------------------------------- */
-@import "vendors/normalize";
-@import "vendors/sanitize";
+  //Susy Global
+  @import "lib/susy_global";
 
-/* ----------------------------------------------------------------------------
- * Structure
- * ------------------------------------------------------------------------- */
-@import "partials/structure";
+//Vars
+@import "lib/var/var";
+//Icons
+@import "lib/sprite";
+@import "lib/var/components";
+//Basic Settings
+@import "lib/base";
 
-/* WPCore */
-@import "partials/wpcore";
+//Layout
+@import "lib/layout";
 
-/* Base */
-@import "partials/base";
+//Navigation
+@import "lib/nav";
 
+//Pages
+@import "lib/main";
 
+//Plugins
+@import "lib/plugins/slidebars.min";
+@import "lib/plugins/jquery.bxslider";
+@import "lib/plugins/magnific-popup";
+//Icons
+@import "lib/icons";

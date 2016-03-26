@@ -73,7 +73,7 @@ input#CAPTCHA,input[type=search]#CAPTCHA{display:inline-block;vertical-align:mid
 :-moz-placeholder{color:#ccc;opacity:1}
 ::-moz-placeholder{color:#ccc;opacity:1}
 :-ms-input-placeholder{color:#ccc}
-body{font-family:"Open Sans","Helvetica Neue",Arial,"Heiti TC","LiHei Pro","微軟正黑體","Microsoft Jhenghei",sans-serif;font-size:100%;line-height:1.6}
+body{font-family:"brandon-grotesque","Helvetica Neue",Arial,"source-han-sans-traditional","Heiti TC","LiHei Pro","微軟正黑體","Microsoft Jhenghei",sans-serif;font-size:100%;line-height:1.6}
 .centered{text-align:center}
 .left{text-align:left}
 .right{text-align:right}
@@ -82,7 +82,7 @@ body{font-family:"Open Sans","Helvetica Neue",Arial,"Heiti TC","LiHei Pro","微�
 .transition,.btn{-webkit-transition:.3s all ease-in-out;transition:.3s all ease-in-out}
 .clr:before,.controlgroup:before,nav:before,.clr:after,.controlgroup:after,nav:after{content:'';clear:both;display:block}
 main{display:block}
-a{text-decoration:none}
+a{text-decoration:none;color:#1565c0}
 img{display:block;max-width:100%;margin:0 auto}
 .goodbyeieeight{text-align:center;position:fixed;z-index:9999;top:0;right:0;bottom:0;left:0;background-color:#000;color:#fff;padding-top:120px}
 .goodbyeieeight h1,.goodbyeieeight h2{margin:0 auto;width:50%}
@@ -90,7 +90,8 @@ img{display:block;max-width:100%;margin:0 auto}
 .goodbyeieeight a{display:inline-block;color:#fff;width:120px}
 .goodbyeieeight img{width:64px}
 .goodbyeieeight span{display:block;text-align:center}
-.restrict{max-width:960px;margin:0 auto}
+.restrict-large{max-width:1170px;margin:0 auto}
+.restrict{max-width:740px;margin:0 auto}
 .restrict-small{max-width:700px;margin:0 auto}
 .restrict-tiny{max-width:550px;margin:0 auto}
 nav{text-align:center}

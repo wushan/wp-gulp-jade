@@ -1,6 +1,10 @@
 //Layout Restrictions
+.restrict-large {
+	max-width: 1170px;
+	margin: 0 auto;
+}
 .restrict {
-	max-width: 960px;
+	max-width: 740px;
 	margin: 0 auto;
 }
 .restrict-small {

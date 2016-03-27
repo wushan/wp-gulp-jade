@@ -1,7 +1,9 @@
 <?php
-/**
- * Index File
- */
+/*
+ Template Name: Home
+*/
+?>
+<?php
 
 get_header();
 
@@ -25,10 +27,12 @@ get_header();
 					<h1 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 				</header>
 
-				<div class="entry-content">
+				<section class="entry-content">
 					<?php the_excerpt(); ?>
-				</div>
+				</section>
 
+				<footer class="article-footer">
+				</footer>
 
 			</article>
 			<?php endforeach; ?>

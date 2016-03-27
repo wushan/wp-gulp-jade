@@ -35,9 +35,9 @@
 textarea {
   width: 100%;
   border: 1px solid $gray;
+  border-radius: 3px;
   box-sizing: border-box;
   height: 44px;
-  background-color: $smokygray;
   padding: 1em;
   outline: none;
   min-height: 200px;
@@ -50,9 +50,9 @@ textarea {
 input,input[type=search] {
   width: 100%;
   border: 1px solid $gray;
+  border-radius: 3px;
   box-sizing: border-box;
   height: 44px;
-  background-color: $smokygray;
   padding: 0 1em;
   outline: none;
 

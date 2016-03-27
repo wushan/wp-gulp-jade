@@ -28,3 +28,22 @@ body {
 		width: 100%;
 	}
 }
+
+//Font  Basics
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 400;
+}
+h1 {
+	font-size: 3em;
+	line-height: 1.2;
+}
+
+blockquote {
+	font-style: italic;
+	// color: $gray;
+	padding: .1em 1em;
+	box-sizing: border-box;
+	background-color: $smokygray;
+	margin: 0 0 0 2.5em;
+}

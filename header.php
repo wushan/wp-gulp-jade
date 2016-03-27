@@ -14,7 +14,12 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<header>
+		<header id='header' class='headroom'>
+			<div id='brand'>
+				<div class='brand-title'>
+					<a href=''>TONY</a>
+				</div>
+			</div>
 			<nav>
 			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 			</nav>

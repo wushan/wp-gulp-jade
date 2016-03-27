@@ -2,6 +2,7 @@
 $white: #ffffff;
 $black: #000000;
 $gray: #cccccc;
+$lightgray: #dddddd;
 $smokygray: #f2f2f2;
 $darkgray: #666666;
 $darkestgray: #3e3e3e;
@@ -11,7 +12,7 @@ $main: #1565c0;
 $yellow: #ffd150;
 
 //
-$main-dark: darken($main, 20%);
+$main-dark: #353A53;
 $main-light: lighten($main, 20%);
 
 

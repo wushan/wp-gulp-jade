@@ -125,13 +125,14 @@ nav.slide ul li{display:block}
 .page-cover-item .article-header .meta .post-categories li{display:inline-block;vertical-align:middle}
 .page-cover-item .article-header .meta .post-categories li a{display:block;border:1px solid #fff;padding:.2em 1em;text-transform:uppercase;font-size:.875em;font-weight:600}
 .page-cover-item .entry-content{color:rgba(255,255,255,0.6)}
-.home .page-container{padding:2em 0}
+.home .page-container,.page .page-container{padding:2em 0}
 .masonry-inner .masonry-item img{width:100%}
 .masonry-inner .masonry-item .entry-thumbnail a{display:block;cursor:pointer}
 .masonry-inner .masonry-item .entry-title h3{margin:0 0 .5em 0}
 .masonry-inner .masonry-item .entry-meta{margin:.5em 0;font-size:.875em;color:#ddd;text-transform:uppercase}
 .masonry-inner .masonry-sizer,.masonry-inner .masonry-item{width:46%}
 .masonry-inner .gutter-sizer{width:8%}
+.single .page-cover{height:85vh}
 .single .entry-content{color:#666;font-size:1.2em;text-align:justify}
 .single .entry-meta{padding:.5em 2em;background-color:#f2f2f2;color:#666;font-family:"proxima-nova","brandon-grotesque","Helvetica Neue",Arial,"source-han-sans-traditional","Heiti TC","LiHei Pro","微軟正黑體","Microsoft Jhenghei",sans-serif}
 #comments{padding:0 2em}

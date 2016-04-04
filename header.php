@@ -17,7 +17,7 @@
 		<header id='header' class='headroom'>
 			<div id='brand'>
 				<div class='brand-title'>
-					<a href=''>TONY</a>
+					<a href='<?php echo get_home_url(); ?>'>TONY</a>
 				</div>
 			</div>
 			<nav>

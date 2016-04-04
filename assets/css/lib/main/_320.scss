@@ -68,7 +68,7 @@
 		// font-size: .875em;
 	}
 }
-.home {
+.home, .page {
 	.page-container {
 		padding: 2em 0;
 	}	
@@ -121,6 +121,9 @@
 
 ///Single
 .single {
+	.page-cover {
+		height: 85vh;
+	}
 	.entry-content {
 		color: $darkgray;
 		font-size: 1.2em;

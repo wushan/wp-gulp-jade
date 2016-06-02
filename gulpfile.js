@@ -28,7 +28,7 @@
  */
 
 var project              = 'WPGulpTheme'; // Project Name.
-var projectURL           = 'src.wordpress-develop.dev'; // Project URL. Could be something like localhost:8888.
+var projectURL           = 'jade.dev'; // Project URL. Could be something like localhost:8888.
 var productURL           = './'; // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root folder.
 
 

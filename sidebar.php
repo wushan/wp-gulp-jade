@@ -1,21 +1,7 @@
-<div id="sidebar1" class="sidebar" role="complementary">
 
-	<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
-
-		<?php dynamic_sidebar( 'sidebar1' ); ?>
-
-	<?php else : ?>
-
-		<?php
-			/*
-			 * This content shows up if there are no widgets defined in the backend.
-			*/
-		?>
-
-		<div class="no-widgets">
-			<p>This is a widget ready area. Add some and they will appear here.</p>
-		</div>
-
-	<?php endif; ?>
-
-</div>
+<aside id="sidebar" role="complementary"><?php if ( is_active_sidebar( 'primary-widget-area' ) ) : ?>
+	<div id="primary" class="widget-area">
+		<ul class="xoxo"><?php dynamic_sidebar( 'primary-widget-area' ); ?>
+		</ul>
+	</div><?php endif; ?>
+</aside>

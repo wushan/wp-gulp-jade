@@ -54,6 +54,7 @@ var imagesDestination    = './assets/img/'; // Destination folder of optimized i
 
 
 // Watch files paths.
+var templatesWatchFiles	 = './templates/*.jade'; //Path to Jades
 var styleWatchFiles      = './assets/css/**/*.scss'; // Path to all *.scss files inside css folder and inside them.
 var vendorJSWatchFiles   = './assets/js/vendors/*.js'; // Path to all vendors JS files.
 var customJSWatchFiles   = './assets/js/custom/*.js'; // Path to all custom JS files.
@@ -83,6 +84,9 @@ const AUTOPREFIXER_BROWSERS = [
  * Load gulp plugins and assing them semantic names.
  */
 var gulp         = require('gulp'); // Gulp of-course
+
+// Templating
+var jade = require('gulp-jade-php');
 
 // CSS related plugins.
 var sass         = require('gulp-sass'); // Gulp pluign for Sass compilation.
@@ -138,6 +142,18 @@ var reload       = browserSync.reload; // For manual browser reload.
 
  	} );
  });
+
+/**
+Task Jade-PHP
+**/
+
+gulp.task('templates', function() {
+  gulp.src('./templates/*.jade')
+    .pipe(jade({
+		pretty: '\t'	// Set to false to minify/uglify the PHP
+	}))
+     .pipe(gulp.dest('./'));
+});
 
 
 /**
@@ -268,7 +284,8 @@ gulp.task( 'images', function() {
  *
  * Watches for file changes and runs specific tasks.
  */
-gulp.task( 'default', ['styles', 'vendorsJs', 'customJS', 'images', 'browser-sync'], function () {
+gulp.task( 'default', ['templates', 'styles', 'vendorsJs', 'customJS', 'images', 'browser-sync'], function () {
+	gulp.watch( templatesWatchFiles, [ 'templates' ]); 
 	gulp.watch( projectPHPWatchFiles, reload); // Reload on PHP file changes.
 	gulp.watch( styleWatchFiles, [ 'styles' ] ); // Reload on SCSS file changes.
 	gulp.watch( vendorJSWatchFiles, [ 'vendorsJs', reload ]  ); // Reload on vendorsJs file changes.

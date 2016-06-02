@@ -1,41 +1,29 @@
-<?php
-/**
- * Index File
- */
-
-get_header();
-
-?>
-<main id="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<section class='page-cover'>
-			<div class='background' style='background-image: url(<?php the_post_thumbnail_url();?>);'></div>
-			<div class='page-cover-item restrict'>
-				<header class="article-header">
-					<h1 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-				</header>
-
+<?php get_header(); ?>
+<section role="main" class="entry"><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<article id="post-<?php the_ID(); ?>" class="<?php post_class(); ?>">
+		<header class="header">
+			<div class="row">
+				<div class="large-12 columns">
+					<h1><?php the_title(); ?>
+					</h1>
+				</div>
 			</div>
+		</header>
+		<section class="content"><?php if (is_page("")) { ?>
+			<div class="some-container">
+				<div class="row">
+					<div class="large-6 columns"></div>
+					<div class="large-6 columns"></div>
+				</div>
+			</div><?php } else { ?>
+			<div class="article-container">
+				<div class="row">
+					<div class="large-3 columns nav"><?php get_template_part("sidenav"); ?>
+					</div>
+					<div class="large-9 columns art left-justify"><?php the_content(); ?>
+					</div>
+				</div>
+			</div><?php } ?>
 		</section>
-		<section class='page-container'>
-			<div class='restrict-large'>
-				
-					<article id="post-<?php the_ID(); ?>" role="article">
-
-						<div class="entry-content">
-							<?php the_content(); ?>
-						</div>
-
-					</article>
-				
-			</div>
-			
-		</section>
-	<?php endwhile; endif; ?>
-</main>
-
-<!-- <?php get_sidebar(); ?> -->
-
-
-
-<?php get_footer(); ?>
+	</article><?php endwhile; endif; ?>
+</section><?php get_template_part(""); ?><?php get_sidebar(); ?><?php get_footer(); ?>
